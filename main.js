@@ -6,6 +6,12 @@
     };
     const body = document.querySelector('body');
     const btn = document.querySelector('button');
+    const placeHolder = document.querySelector('#bg-clr');
     
-    btn.addEventListener('click', () => body.style.backgroundColor = randomHexColor() );
+    btn.addEventListener('click', () => {
+        const bgColor = randomHexColor();
+
+        body.style.backgroundColor = bgColor;
+        placeHolder.innerHTML = bgColor;
+    });
 } )()

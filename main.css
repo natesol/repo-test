@@ -7,22 +7,24 @@
     font: inherit;
     vertical-align: baseline
 }
-
 :focus {
     outline: 0
 }
 
 html {
+    --prime: #009688;
+    --prime-dark: #056e64;
+
     line-height: 1.5;
-    font-size: clamp(12px, calc(0.8vw + 0.8vh), 18px);
+    font-size: clamp(12px, calc(0.7vw + 0.7vh), 18px);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
     min-height: 100vh;
-
     background: #ebe6ec;
-    color: #222;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #444;
+    font-family: 'Poppins';
     display: flex;
     justify-content: center;
 }
@@ -43,21 +45,28 @@ main {
 h1 {
     font-size: 3rem;
     font-weight: 900;
-    color: #e91e63;
+    color: var(--prime);
     text-transform: capitalize;
 }
 h3 {
     font-size: 1.325rem;
     font-weight: 900;
-    color: #444;
     text-transform: capitalize;
+}
+
+p {
+    text-align: justify;
+}
+
+#bg-clr {
+    font-weight: 700;
 }
 
 button {
     font-size: 1.2rem;
     line-height: 1;
     font-weight: 700;
-    background-color: #e91e63;
+    background-color: var(--prime);
     color: #fff;
     text-transform: capitalize;
     padding: 1.1rem 1.5rem;
@@ -66,5 +75,5 @@ button {
     border-radius: 7rem;
 }
 button:hover {
-    background-color: #c70848;
+    background-color: var(--prime-dark);
 }
