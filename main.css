@@ -12,8 +12,8 @@
 }
 
 html {
-    --prime: #009688;
-    --prime-dark: #056e64;
+    --prime: #ff698a;
+    --prime-dark: #e24568;
 
     line-height: 1.5;
     font-size: clamp(12px, calc(0.7vw + 0.7vh), 18px);
