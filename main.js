@@ -1,8 +1,11 @@
 // 
 // 
 ( () => {
+    const randomHex = (b = 16) => {
+        return (~~(Math.random()*b)).toString(16)
+    };
     const randomHexColor = () => {
-        return `#${(~~(Math.random()*16)).toString(16)}${(~~(Math.random()*16)).toString(16)}${(~~(Math.random()*16)).toString(16)}${(~~(Math.random()*16)).toString(16)}${(~~(Math.random()*16)).toString(16)}${(~~(Math.random()*16)).toString(16)}`;
+        return `#${randomHex()}${randomHex()}${randomHex()}${randomHex()}${randomHex()}${randomHex()}`;
     };
     const body = document.querySelector('body');
     const btn = document.querySelector('button');

@@ -12,8 +12,8 @@
 }
 
 html {
-    --prime: #009688;
-    --prime-dark: #056e64;
+    --prime: #836bff;
+    --prime-dark: #644cde;
 
     line-height: 1.5;
     font-size: clamp(12px, calc(0.7vw + 0.7vh), 18px);
@@ -27,19 +27,28 @@ body {
     font-family: 'Poppins';
     display: flex;
     justify-content: center;
+    transition: all 150ms ease-in-out;
 }
 
 main {
-    width: 60%;
+    width: 55%;
     max-width: 700px;
     background-color: #fff;
-    border-radius: 1rem;
+    border-radius: 2rem;
     margin: auto;
-    padding: 1.5rem;
+    padding: 2rem;
     text-align: center;
     border: 1px solid rgb(0 0 0 / 15%);
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%),
-                0 4px 6px -2px rgb(0 0 0 / 5%);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%),                0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+@media screen and (max-width: 700px) {
+    main { width: 65% }
+}
+@media screen and (max-width: 600px) {
+    main { width: 75% }
+}
+@media screen and (max-width: 500px) {
+    main { width: 90% }
 }
 
 h1 {
